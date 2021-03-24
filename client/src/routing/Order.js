@@ -107,7 +107,7 @@ props.history.push(`/order/${order._id}/track`)
       amount: amount.toString(),
       currency: currency,
       name: "Greengrocer",
-      description: "Testing mode",
+      description: "Thank you for Shopping❤",
       image: { logo },
       order_id: order_id,
       handler: async function (response) {
@@ -124,12 +124,9 @@ props.history.push(`/order/${order._id}/track`)
         getOrder(props.match.params.id);
       },
       prefill: {
-        name: "Singamsetty Munidhanush",
-        email: "s.munidhanush15@gmail.com",
-        contact: "9390007409",
-      },
-      notes: {
-        address: "Kallur, Chittor district",
+        name: userData.name,
+        email: userData.email,
+    
       },
       theme: {
         color: "#56cc9d",
